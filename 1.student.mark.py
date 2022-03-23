@@ -23,8 +23,7 @@ def update_marks_of_course(course):
     course['marks'] = []
 
     for student in students:
-        course['marks'].append((student,
-            input(f"Enter mark for student {student['name']}: ")))
+        course['marks'].append((student, input(f"Enter mark for student {student['name']}: ")))
 
 # List courses
 def list_courses():
@@ -90,4 +89,4 @@ if __name__ == '__main__':
     action_loop(msg='Marking course...', callback=update_marks_of_course)
     action_loop(msg='Select a course...', callback=show_marks_of_course)
 
-    print('Goodbye')
+    print("Goodbye")
