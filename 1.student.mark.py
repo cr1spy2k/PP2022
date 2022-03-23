@@ -6,7 +6,7 @@ def get_number_of_students():
 def get_student_information():
     return {'id': input("Enter student id: "),
             'name': input("Enter student name: "),
-            'dob': input("Enter student's date of birth: ")}
+            'dob': input("Enter student date of birth: ")}
 
 # Input number of courses
 def get_number_of_courses():
@@ -57,7 +57,7 @@ def show_marks_of_course(course):
 def select_course_prompt(intro_message):
     list_courses()
     print(intro_message)
-    return input('-> Choose a course (Enter nothing to skip): ')
+    return input('Choose a course (Enter nothing to skip): ')
 
 def search(List, keyword):
     for item in List:
