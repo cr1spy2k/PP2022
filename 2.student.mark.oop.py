@@ -30,8 +30,8 @@ def input_number_of_courses():
 
 # Input course information: id, name
 def input_course_information():
-    return {'id': input("Enter course id: "),
-            'name': input("Enter course name: ")}
+    return {'id': str(input("Enter course id: ")),
+            'name': str(input("Enter course name: "))}
 
 # Select a course, input marks for student in this course
 def update_marks_of_course(course):
